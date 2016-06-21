@@ -1,0 +1,2 @@
+github "reactive-swift/Future" "master"
+github "Alamofire/Alamofire"

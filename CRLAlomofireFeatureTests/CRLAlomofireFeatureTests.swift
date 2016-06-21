@@ -7,12 +7,13 @@
 //
 
 import XCTest
-@testable import CRLAlomofireFeature
+import CRLAlomofireFeature
 
 class CRLAlomofireFeatureTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
+        print("sutupped!!!")
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
