@@ -1,0 +1,30 @@
+[submodule "Carthage/Checkouts/Alamofire"]
+	path = Carthage/Checkouts/Alamofire
+	url = https://github.com/Alamofire/Alamofire.git
+[submodule "Carthage/Checkouts/CUV"]
+	path = Carthage/Checkouts/CUV
+	url = https://github.com/reactive-swift/CUV.git
+[submodule "Carthage/Checkouts/Result"]
+	path = Carthage/Checkouts/Result
+	url = https://github.com/antitypical/Result.git
+[submodule "Carthage/Checkouts/Boilerplate"]
+	path = Carthage/Checkouts/Boilerplate
+	url = https://github.com/crossroadlabs/Boilerplate.git
+[submodule "Carthage/Checkouts/Foundation3"]
+	path = Carthage/Checkouts/Foundation3
+	url = https://github.com/crossroadlabs/Foundation3.git
+[submodule "Carthage/Checkouts/UV"]
+	path = Carthage/Checkouts/UV
+	url = https://github.com/reactive-swift/UV.git
+[submodule "Carthage/Checkouts/RunLoop"]
+	path = Carthage/Checkouts/RunLoop
+	url = https://github.com/reactive-swift/RunLoop.git
+[submodule "Carthage/Checkouts/ExecutionContext"]
+	path = Carthage/Checkouts/ExecutionContext
+	url = https://github.com/reactive-swift/ExecutionContext.git
+[submodule "Carthage/Checkouts/Event"]
+	path = Carthage/Checkouts/Event
+	url = https://github.com/reactive-swift/Event.git
+[submodule "Carthage/Checkouts/Future"]
+	path = Carthage/Checkouts/Future
+	url = https://github.com/reactive-swift/Future.git
