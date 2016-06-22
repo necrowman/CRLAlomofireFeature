@@ -14,7 +14,7 @@ import Alamofire
 extension Alamofire.Request {
     func responseJSON() -> Future<AnyObject> {
         let p = Promise<AnyObject>()
-        self.responseJSON() { response in
+        self.responseJSON { (response: Response<AnyObject, NSError>) in
             switch response.result {
             case .Success(let value):
                 p.trySuccess(value)
@@ -27,7 +27,19 @@ extension Alamofire.Request {
     
     func response() -> Future<AnyObject> {
         let p = Promise<AnyObject>()
-        self.response() { response in
+        self.response { (request: NSURLRequest?, response: NSHTTPURLResponse?, data: NSData?, error: NSError?) in
+            if let error = error {
+                p.tryFail(error)
+            } else {
+                p.trySuccess(data!)
+            }
+        }
+        return p.future
+    }
+    
+    func responseData() -> Future<AnyObject> {
+        let p = Promise<AnyObject>()
+        self.responseData { (response: Response<NSData, NSError>) in
             switch response.result {
             case .Success(let value):
                 p.trySuccess(value)
@@ -38,9 +50,9 @@ extension Alamofire.Request {
         return p.future
     }
     
-    func responseString(encoding: NSStringEncoding) -> Future<AnyObject> {
+    func responseString() -> Future<AnyObject> {
         let p = Promise<AnyObject>()
-        self.responseString(encoding) { response in
+        self.responseString { (response: Response<String, NSError>) in
             switch response.result {
             case .Success(let value):
                 p.trySuccess(value)
@@ -51,9 +63,9 @@ extension Alamofire.Request {
         return p.future
     }
     
-    func responsePropertyList(options: NSPropertyListReadOptions) -> Future<AnyObject> {
+    func responsePropertyList() -> Future<AnyObject> {
         let p = Promise<AnyObject>()
-        self.responsePropertyList(options) { response in
+        self.responsePropertyList { (response: Response<AnyObject, NSError>) in
             switch response.result {
             case .Success(let value):
                 p.trySuccess(value)

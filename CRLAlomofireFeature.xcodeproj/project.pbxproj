@@ -8,17 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		448DE6901D19ACA800D680EC /* CRLAlomofireFeature.h in Headers */ = {isa = PBXBuildFile; fileRef = 448DE68F1D19ACA800D680EC /* CRLAlomofireFeature.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		448DE6971D19ACA800D680EC /* CRLAlomofireFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448DE68C1D19ACA800D680EC /* CRLAlomofireFeature.framework */; };
 		448DE69C1D19ACA800D680EC /* CRLAlomofireFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448DE69B1D19ACA800D680EC /* CRLAlomofireFeatureTests.swift */; };
 		448DE6A71D19AE1A00D680EC /* CRLAlomofireFeatureAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448DE6A61D19AE1A00D680EC /* CRLAlomofireFeatureAPI.swift */; };
-		448DE6CB1D19C19700D680EC /* Boilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448DE6CA1D19C19700D680EC /* Boilerplate.framework */; };
-		448DE6CD1D19C19D00D680EC /* Event.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448DE6CC1D19C19D00D680EC /* Event.framework */; };
-		448DE6CF1D19C1AA00D680EC /* ExecutionContext.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448DE6CE1D19C1AA00D680EC /* ExecutionContext.framework */; };
-		448DE6D11D19C1B000D680EC /* Foundation3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448DE6D01D19C1B000D680EC /* Foundation3.framework */; };
-		448DE6D31D19C1B600D680EC /* Future.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448DE6D21D19C1B600D680EC /* Future.framework */; };
-		448DE6D51D19C1C100D680EC /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448DE6D41D19C1C100D680EC /* Result.framework */; };
-		448DE6D71D19C1CA00D680EC /* RunLoop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448DE6D61D19C1CA00D680EC /* RunLoop.framework */; };
-		448DE6D91D19C1CF00D680EC /* UV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448DE6D81D19C1CF00D680EC /* UV.framework */; };
+		44FBFC071D1AD9CA0052DD19 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FBFBFF1D1AD9CA0052DD19 /* Alamofire.framework */; };
+		44FBFC081D1AD9CA0052DD19 /* Boilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FBFC001D1AD9CA0052DD19 /* Boilerplate.framework */; };
+		44FBFC091D1AD9CA0052DD19 /* Event.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FBFC011D1AD9CA0052DD19 /* Event.framework */; };
+		44FBFC0A1D1AD9CA0052DD19 /* ExecutionContext.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FBFC021D1AD9CA0052DD19 /* ExecutionContext.framework */; };
+		44FBFC0B1D1AD9CA0052DD19 /* Foundation3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FBFC031D1AD9CA0052DD19 /* Foundation3.framework */; };
+		44FBFC0C1D1AD9CA0052DD19 /* Future.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FBFC041D1AD9CA0052DD19 /* Future.framework */; };
+		44FBFC0D1D1AD9CA0052DD19 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FBFC051D1AD9CA0052DD19 /* Result.framework */; };
+		44FBFC0E1D1AD9CA0052DD19 /* RunLoop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FBFC061D1AD9CA0052DD19 /* RunLoop.framework */; };
+		44FBFC0F1D1ADA000052DD19 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FBFBFF1D1AD9CA0052DD19 /* Alamofire.framework */; };
+		44FBFC101D1ADA000052DD19 /* Boilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FBFC001D1AD9CA0052DD19 /* Boilerplate.framework */; };
+		44FBFC111D1ADA000052DD19 /* Event.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FBFC011D1AD9CA0052DD19 /* Event.framework */; };
+		44FBFC121D1ADA000052DD19 /* ExecutionContext.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FBFC021D1AD9CA0052DD19 /* ExecutionContext.framework */; };
+		44FBFC131D1ADA000052DD19 /* Foundation3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FBFC031D1AD9CA0052DD19 /* Foundation3.framework */; };
+		44FBFC141D1ADA000052DD19 /* Future.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FBFC041D1AD9CA0052DD19 /* Future.framework */; };
+		44FBFC151D1ADA000052DD19 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FBFC051D1AD9CA0052DD19 /* Result.framework */; };
+		44FBFC161D1ADA000052DD19 /* RunLoop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FBFC061D1AD9CA0052DD19 /* RunLoop.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,23 @@
 		448DE6D41D19C1C100D680EC /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "Carthage/Checkouts/Result/build/Debug-iphoneos/Result.framework"; sourceTree = "<group>"; };
 		448DE6D61D19C1CA00D680EC /* RunLoop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RunLoop.framework; path = "Carthage/Checkouts/RunLoop/build/Debug-iphoneos/RunLoop.framework"; sourceTree = "<group>"; };
 		448DE6D81D19C1CF00D680EC /* UV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UV.framework; path = Carthage/Checkouts/UV/build/Debug/UV.framework; sourceTree = "<group>"; };
+		44FBFBED1D1ACD700052DD19 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/CRLAlomofireFeature-bqjsztgngoiezdcfrdrxwxnwvwvx/Build/Products/Debug-iphonesimulator/Alamofire.framework"; sourceTree = "<group>"; };
+		44FBFBEF1D1ACD780052DD19 /* Boilerplate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Boilerplate.framework; path = "Carthage/Checkouts/Boilerplate/build/Debug-iphoneos/Boilerplate.framework"; sourceTree = "<group>"; };
+		44FBFBF11D1ACD7E0052DD19 /* Event.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Event.framework; path = "Carthage/Checkouts/Event/build/Debug-iphoneos/Event.framework"; sourceTree = "<group>"; };
+		44FBFBF31D1ACD8B0052DD19 /* ExecutionContext.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExecutionContext.framework; path = "Carthage/Checkouts/ExecutionContext/build/Debug-iphoneos/ExecutionContext.framework"; sourceTree = "<group>"; };
+		44FBFBF51D1ACD910052DD19 /* Foundation3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation3.framework; path = "Carthage/Checkouts/Foundation3/build/Debug-iphoneos/Foundation3.framework"; sourceTree = "<group>"; };
+		44FBFBF71D1ACD960052DD19 /* Future.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Future.framework; path = "Carthage/Checkouts/Future/build/Debug-iphoneos/Future.framework"; sourceTree = "<group>"; };
+		44FBFBF91D1ACD9A0052DD19 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "Carthage/Checkouts/Result/build/Debug-iphoneos/Result.framework"; sourceTree = "<group>"; };
+		44FBFBFB1D1ACDA00052DD19 /* RunLoop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RunLoop.framework; path = "Carthage/Checkouts/RunLoop/build/Debug-iphoneos/RunLoop.framework"; sourceTree = "<group>"; };
+		44FBFBFD1D1ACDA80052DD19 /* UV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UV.framework; path = Carthage/Checkouts/UV/build/Debug/UV.framework; sourceTree = "<group>"; };
+		44FBFBFF1D1AD9CA0052DD19 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		44FBFC001D1AD9CA0052DD19 /* Boilerplate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Boilerplate.framework; path = Carthage/Build/iOS/Boilerplate.framework; sourceTree = "<group>"; };
+		44FBFC011D1AD9CA0052DD19 /* Event.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Event.framework; path = Carthage/Build/iOS/Event.framework; sourceTree = "<group>"; };
+		44FBFC021D1AD9CA0052DD19 /* ExecutionContext.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExecutionContext.framework; path = Carthage/Build/iOS/ExecutionContext.framework; sourceTree = "<group>"; };
+		44FBFC031D1AD9CA0052DD19 /* Foundation3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation3.framework; path = Carthage/Build/iOS/Foundation3.framework; sourceTree = "<group>"; };
+		44FBFC041D1AD9CA0052DD19 /* Future.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Future.framework; path = Carthage/Build/iOS/Future.framework; sourceTree = "<group>"; };
+		44FBFC051D1AD9CA0052DD19 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		44FBFC061D1AD9CA0052DD19 /* RunLoop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RunLoop.framework; path = Carthage/Build/iOS/RunLoop.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +78,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				448DE6D91D19C1CF00D680EC /* UV.framework in Frameworks */,
-				448DE6D71D19C1CA00D680EC /* RunLoop.framework in Frameworks */,
-				448DE6D51D19C1C100D680EC /* Result.framework in Frameworks */,
-				448DE6D31D19C1B600D680EC /* Future.framework in Frameworks */,
-				448DE6D11D19C1B000D680EC /* Foundation3.framework in Frameworks */,
-				448DE6CF1D19C1AA00D680EC /* ExecutionContext.framework in Frameworks */,
-				448DE6CD1D19C19D00D680EC /* Event.framework in Frameworks */,
-				448DE6CB1D19C19700D680EC /* Boilerplate.framework in Frameworks */,
+				44FBFC0F1D1ADA000052DD19 /* Alamofire.framework in Frameworks */,
+				44FBFC101D1ADA000052DD19 /* Boilerplate.framework in Frameworks */,
+				44FBFC111D1ADA000052DD19 /* Event.framework in Frameworks */,
+				44FBFC121D1ADA000052DD19 /* ExecutionContext.framework in Frameworks */,
+				44FBFC131D1ADA000052DD19 /* Foundation3.framework in Frameworks */,
+				44FBFC141D1ADA000052DD19 /* Future.framework in Frameworks */,
+				44FBFC151D1ADA000052DD19 /* Result.framework in Frameworks */,
+				44FBFC161D1ADA000052DD19 /* RunLoop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +93,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				448DE6971D19ACA800D680EC /* CRLAlomofireFeature.framework in Frameworks */,
+				44FBFC071D1AD9CA0052DD19 /* Alamofire.framework in Frameworks */,
+				44FBFC081D1AD9CA0052DD19 /* Boilerplate.framework in Frameworks */,
+				44FBFC091D1AD9CA0052DD19 /* Event.framework in Frameworks */,
+				44FBFC0A1D1AD9CA0052DD19 /* ExecutionContext.framework in Frameworks */,
+				44FBFC0B1D1AD9CA0052DD19 /* Foundation3.framework in Frameworks */,
+				44FBFC0C1D1AD9CA0052DD19 /* Future.framework in Frameworks */,
+				44FBFC0D1D1AD9CA0052DD19 /* Result.framework in Frameworks */,
+				44FBFC0E1D1AD9CA0052DD19 /* RunLoop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +110,23 @@
 		448DE6821D19ACA800D680EC = {
 			isa = PBXGroup;
 			children = (
+				44FBFBFF1D1AD9CA0052DD19 /* Alamofire.framework */,
+				44FBFC001D1AD9CA0052DD19 /* Boilerplate.framework */,
+				44FBFC011D1AD9CA0052DD19 /* Event.framework */,
+				44FBFC021D1AD9CA0052DD19 /* ExecutionContext.framework */,
+				44FBFC031D1AD9CA0052DD19 /* Foundation3.framework */,
+				44FBFC041D1AD9CA0052DD19 /* Future.framework */,
+				44FBFC051D1AD9CA0052DD19 /* Result.framework */,
+				44FBFC061D1AD9CA0052DD19 /* RunLoop.framework */,
+				44FBFBFD1D1ACDA80052DD19 /* UV.framework */,
+				44FBFBFB1D1ACDA00052DD19 /* RunLoop.framework */,
+				44FBFBF91D1ACD9A0052DD19 /* Result.framework */,
+				44FBFBF71D1ACD960052DD19 /* Future.framework */,
+				44FBFBF51D1ACD910052DD19 /* Foundation3.framework */,
+				44FBFBF31D1ACD8B0052DD19 /* ExecutionContext.framework */,
+				44FBFBF11D1ACD7E0052DD19 /* Event.framework */,
+				44FBFBEF1D1ACD780052DD19 /* Boilerplate.framework */,
+				44FBFBED1D1ACD700052DD19 /* Alamofire.framework */,
 				448DE6D81D19C1CF00D680EC /* UV.framework */,
 				448DE6D61D19C1CA00D680EC /* RunLoop.framework */,
 				448DE6D41D19C1C100D680EC /* Result.framework */,
@@ -351,6 +399,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CRLAlomofireFeature/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -369,6 +421,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CRLAlomofireFeature/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -381,6 +437,18 @@
 		448DE6A41D19ACA800D680EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Boilerplate/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Event/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Checkouts/ExecutionContext/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Foundation3/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Future/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Result/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Checkouts/RunLoop/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Checkouts/UV/build/Debug",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CRLAlomofireFeatureTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CrossroadLabs.CRLAlomofireFeatureTests;
@@ -391,6 +459,18 @@
 		448DE6A51D19ACA800D680EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Boilerplate/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Event/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Checkouts/ExecutionContext/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Foundation3/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Future/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Result/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Checkouts/RunLoop/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Checkouts/UV/build/Debug",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CRLAlomofireFeatureTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CrossroadLabs.CRLAlomofireFeatureTests;
