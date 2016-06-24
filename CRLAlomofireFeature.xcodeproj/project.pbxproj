@@ -26,6 +26,7 @@
 		44FBFC141D1ADA000052DD19 /* Future.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FBFC041D1AD9CA0052DD19 /* Future.framework */; };
 		44FBFC151D1ADA000052DD19 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FBFC051D1AD9CA0052DD19 /* Result.framework */; };
 		44FBFC161D1ADA000052DD19 /* RunLoop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FBFC061D1AD9CA0052DD19 /* RunLoop.framework */; };
+		44FBFC171D1AFD460052DD19 /* CRLAlomofireFeatureAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448DE6A61D19AE1A00D680EC /* CRLAlomofireFeatureAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -285,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44FBFC171D1AFD460052DD19 /* CRLAlomofireFeatureAPI.swift in Sources */,
 				448DE69C1D19ACA800D680EC /* CRLAlomofireFeatureTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
