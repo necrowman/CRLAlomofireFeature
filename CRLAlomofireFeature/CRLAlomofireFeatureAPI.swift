@@ -68,6 +68,7 @@ extension Alamofire.Request {
         self.responsePropertyList { (response: Response<AnyObject, NSError>) in
             switch response.result {
             case .Success(let value):
+                print("RESULT class:", value.classForCoder)
                 p.trySuccess(value)
             case .Failure(let error):
                 p.tryFail(error)

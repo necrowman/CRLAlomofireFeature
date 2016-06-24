@@ -207,6 +207,54 @@ class CRLAlomofireFeatureTests: XCTestCase {
         }
     }
     
+    //MARK: - responseData() -> Future<NSData> testing
+    func testResponsePropertyList() {
+        let asyncExpectation = expectationWithDescription("AlamofireResponseString")
+        let urlString = "\(correctURLBase)simpleTestPlist.plist"
+        
+        
+        
+        let future = Alamofire.request(.GET, urlString).responsePropertyList()
+        future.onSuccess { value in
+            
+            print("RESULT VALUE -> ", value)
+            XCTAssertEqual(value as? String, "testStringKey")
+            asyncExpectation.fulfill()
+        }
+        future.onFailure { error in
+            print("ERROR VALUE -> ", error)
+            XCTFail("Whoops, error \(error)")
+            asyncExpectation.fulfill()
+        }
+        
+        self.waitForExpectationsWithTimeout(5) { error in
+            XCTAssertNil(error)
+        }
+    }
+    
+    func testResponsePropertyListServerNotFound() {
+        let asyncExpectation = expectationWithDescription("AlamofireResponseString")
+        let urlString = "\(uncorrectURLBase)simpleTestPlist.plist"
+        let future = Alamofire.request(.GET, urlString).responseData()
+        future.onSuccess { value in
+            
+            let string = String(data: value, encoding: NSUTF8StringEncoding)!
+            print("RESULT VALUE -> ", string)
+            XCTFail("Whoops, error \(string)")
+            XCTAssertEqual(string, "Test String")
+            asyncExpectation.fulfill()
+        }
+        future.onFailure { error in
+            print("ERROR VALUE -> ", error)
+            XCTAssertNotNil(error)
+            asyncExpectation.fulfill()
+        }
+        
+        self.waitForExpectationsWithTimeout(5) { error in
+            XCTAssertNil(error)
+        }
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock {
