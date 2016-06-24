@@ -25,20 +25,20 @@ extension Alamofire.Request {
         return p.future
     }
     
-    func response() -> Future<AnyObject> {
-        let p = Promise<AnyObject>()
+    func response() -> Future<NSData?> {
+        let p = Promise<NSData?>()
         self.response { (request: NSURLRequest?, response: NSHTTPURLResponse?, data: NSData?, error: NSError?) in
             if let error = error {
                 p.tryFail(error)
             } else {
-                p.trySuccess(data!)
+                p.trySuccess(data)
             }
         }
         return p.future
     }
     
-    func responseData() -> Future<AnyObject> {
-        let p = Promise<AnyObject>()
+    func responseData() -> Future<NSData> {
+        let p = Promise<NSData>()
         self.responseData { (response: Response<NSData, NSError>) in
             switch response.result {
             case .Success(let value):
@@ -50,8 +50,8 @@ extension Alamofire.Request {
         return p.future
     }
     
-    func responseString() -> Future<AnyObject> {
-        let p = Promise<AnyObject>()
+    func responseString() -> Future<String> {
+        let p = Promise<String>()
         self.responseString { (response: Response<String, NSError>) in
             switch response.result {
             case .Success(let value):
