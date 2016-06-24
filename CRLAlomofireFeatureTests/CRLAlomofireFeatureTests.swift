@@ -27,6 +27,7 @@ class CRLAlomofireFeatureTests: XCTestCase {
         super.tearDown()
     }
     
+    //MARK: - responseString() -> Future<String> testing
     func testSimpleString() {
         let asyncExpectation = expectationWithDescription("AlamofireResponseString")
         let urlString = "\(correctURLBase)simpleTestURL.txt"
@@ -68,6 +69,7 @@ class CRLAlomofireFeatureTests: XCTestCase {
         }
     }
     
+    //MARK: - responseJSON() -> Future<AnyObject> testing
     func testSimpleJSONStringParsing() {
         let asyncExpectation = expectationWithDescription("AlamofireResponseString")
         let urlString = "\(correctURLBase)simpleJSONURL.json"
@@ -100,6 +102,52 @@ class CRLAlomofireFeatureTests: XCTestCase {
             print("RESULT VALUE -> ", stringValue)
             XCTFail("Whoops, error \(stringValue)")
             XCTAssertEqual(stringValue, "string value")
+            asyncExpectation.fulfill()
+        }
+        future.onFailure { error in
+            print("ERROR VALUE -> ", error)
+            XCTAssertNotNil(error)
+            asyncExpectation.fulfill()
+        }
+        
+        self.waitForExpectationsWithTimeout(5) { error in
+            XCTAssertNil(error)
+        }
+    }
+    
+    //MARK: - response() -> Future<AnyObject> testing
+    func testResponse() {
+        let asyncExpectation = expectationWithDescription("AlamofireResponseString")
+        let urlString = "\(correctURLBase)simpleTestURL.txt"
+        let future = Alamofire.request(.GET, urlString).response()
+        future.onSuccess { value in
+            
+            let string = String(data: value!, encoding: NSUTF8StringEncoding)!
+            print("RESULT VALUE -> ", string)
+            XCTAssertEqual(string, "Test String")
+            asyncExpectation.fulfill()
+        }
+        future.onFailure { error in
+            print("ERROR VALUE -> ", error)
+            XCTFail("Whoops, error \(error)")
+            asyncExpectation.fulfill()
+        }
+        
+        self.waitForExpectationsWithTimeout(5) { error in
+            XCTAssertNil(error)
+        }
+    }
+    
+    func testResponseServerNotFound() {
+        let asyncExpectation = expectationWithDescription("AlamofireResponseString")
+        let urlString = "\(uncorrectURLBase)simpleTestURL.txt"
+        let future = Alamofire.request(.GET, urlString).response()
+        future.onSuccess { value in
+            
+            let string = String(data: value!, encoding: NSUTF8StringEncoding)!
+            print("RESULT VALUE -> ", string)
+            XCTFail("Whoops, error \(string)")
+            XCTAssertEqual(string, "Test String")
             asyncExpectation.fulfill()
         }
         future.onFailure { error in
