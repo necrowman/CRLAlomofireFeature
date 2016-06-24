@@ -1,7 +1,1 @@
-{
-    "testString":"string value",
-    "testNumber":5,
-    "testBool":false,
-    "testDouble":3.1415,
-    "testArray":[1,2,3,4,5]
-}
+{"testString":"string value"}
