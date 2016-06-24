@@ -1,0 +1,7 @@
+<key>testKey</key>
+    <dict>
+        <key>Distribution</key>
+        <string>./</string>
+        <key>Type</key>
+        <string>deb</string>
+    </dict>
