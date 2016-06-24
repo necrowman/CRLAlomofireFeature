@@ -1,4 +1,6 @@
-<key>testKey</key>
+<key>testStringKey</key>
+    <string>testValue</string>
+<key>testDictionaryKey</key>
     <dict>
         <key>Distribution</key>
         <string>./</string>
