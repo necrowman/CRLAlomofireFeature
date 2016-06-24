@@ -66,6 +66,7 @@ extension Alamofire.Request {
     func responsePropertyList() -> Future<AnyObject> {
         let p = Promise<AnyObject>()
         self.responsePropertyList { (response: Response<AnyObject, NSError>) in
+//            try! p.complete(response.result)
             switch response.result {
             case .Success(let value):
                 print("RESULT class:", value.classForCoder)
