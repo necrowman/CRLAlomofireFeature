@@ -115,7 +115,7 @@ class CRLAlomofireFeatureTests: XCTestCase {
         }
     }
     
-    //MARK: - response() -> Future<AnyObject> testing
+    //MARK: - response() -> Future<NSData?> testing
     func testResponse() {
         let asyncExpectation = expectationWithDescription("AlamofireResponseString")
         let urlString = "\(correctURLBase)simpleTestURL.txt"
@@ -145,6 +145,52 @@ class CRLAlomofireFeatureTests: XCTestCase {
         future.onSuccess { value in
             
             let string = String(data: value!, encoding: NSUTF8StringEncoding)!
+            print("RESULT VALUE -> ", string)
+            XCTFail("Whoops, error \(string)")
+            XCTAssertEqual(string, "Test String")
+            asyncExpectation.fulfill()
+        }
+        future.onFailure { error in
+            print("ERROR VALUE -> ", error)
+            XCTAssertNotNil(error)
+            asyncExpectation.fulfill()
+        }
+        
+        self.waitForExpectationsWithTimeout(5) { error in
+            XCTAssertNil(error)
+        }
+    }
+    
+    //MARK: - responseData() -> Future<NSData> testing
+    func testResponseData() {
+        let asyncExpectation = expectationWithDescription("AlamofireResponseString")
+        let urlString = "\(correctURLBase)simpleTestURL.txt"
+        let future = Alamofire.request(.GET, urlString).responseData()
+        future.onSuccess { value in
+            
+            let string = String(data: value, encoding: NSUTF8StringEncoding)!
+            print("RESULT VALUE -> ", string)
+            XCTAssertEqual(string, "Test String")
+            asyncExpectation.fulfill()
+        }
+        future.onFailure { error in
+            print("ERROR VALUE -> ", error)
+            XCTFail("Whoops, error \(error)")
+            asyncExpectation.fulfill()
+        }
+        
+        self.waitForExpectationsWithTimeout(5) { error in
+            XCTAssertNil(error)
+        }
+    }
+    
+    func testResponseDataServerNotFound() {
+        let asyncExpectation = expectationWithDescription("AlamofireResponseString")
+        let urlString = "\(uncorrectURLBase)simpleTestURL.txt"
+        let future = Alamofire.request(.GET, urlString).responseData()
+        future.onSuccess { value in
+            
+            let string = String(data: value, encoding: NSUTF8StringEncoding)!
             print("RESULT VALUE -> ", string)
             XCTFail("Whoops, error \(string)")
             XCTAssertEqual(string, "Test String")
