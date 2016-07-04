@@ -1,0 +1,9 @@
+<key>testStringKey</key>
+    <string>testValue</string>
+<key>testDictionaryKey</key>
+    <dict>
+        <key>Distribution</key>
+        <string>./</string>
+        <key>Type</key>
+        <string>deb</string>
+    </dict>

@@ -1,30 +1,20 @@
 [submodule "Carthage/Checkouts/Alamofire"]
-	path = CRLAlomofireFutureExampleProject/Carthage/Checkouts/Alamofire
 	url = https://github.com/Alamofire/Alamofire.git
 [submodule "Carthage/Checkouts/CUV"]
-	path = CRLAlomofireFutureExampleProject/Carthage/Checkouts/CUV
 	url = https://github.com/reactive-swift/CUV.git
 [submodule "Carthage/Checkouts/Result"]
-	path = CRLAlomofireFutureExampleProject/Carthage/Checkouts/Result
 	url = https://github.com/antitypical/Result.git
 [submodule "Carthage/Checkouts/Boilerplate"]
-	path = CRLAlomofireFutureExampleProject/Carthage/Checkouts/Boilerplate
 	url = https://github.com/crossroadlabs/Boilerplate.git
 [submodule "Carthage/Checkouts/Foundation3"]
-	path = CRLAlomofireFutureExampleProject/Carthage/Checkouts/Foundation3
 	url = https://github.com/crossroadlabs/Foundation3.git
 [submodule "Carthage/Checkouts/UV"]
-	path = CRLAlomofireFutureExampleProject/Carthage/Checkouts/UV
 	url = https://github.com/reactive-swift/UV.git
 [submodule "Carthage/Checkouts/RunLoop"]
-	path = CRLAlomofireFutureExampleProject/Carthage/Checkouts/RunLoop
 	url = https://github.com/reactive-swift/RunLoop.git
 [submodule "Carthage/Checkouts/ExecutionContext"]
-	path = CRLAlomofireFutureExampleProject/Carthage/Checkouts/ExecutionContext
 	url = https://github.com/reactive-swift/ExecutionContext.git
 [submodule "Carthage/Checkouts/Event"]
-	path = CRLAlomofireFutureExampleProject/Carthage/Checkouts/Event
 	url = https://github.com/reactive-swift/Event.git
 [submodule "Carthage/Checkouts/Future"]
-	path = CRLAlomofireFutureExampleProject/Carthage/Checkouts/Future
 	url = https://github.com/reactive-swift/Future.git

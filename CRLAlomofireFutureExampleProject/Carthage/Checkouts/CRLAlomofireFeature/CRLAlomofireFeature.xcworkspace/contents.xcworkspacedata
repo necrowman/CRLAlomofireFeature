@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "container:CRLAlomofireFeature.xcodeproj">
+   </FileRef>
+   <Group
+      location = "container:"
+      name = "Frameworks">
+      <FileRef
+         location = "group:Carthage/Checkouts/Alamofire/Alamofire.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Carthage/Checkouts/Boilerplate/Boilerplate.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:Carthage/Checkouts/CUV"
+         name = "CUV">
+         <Group
+            location = "group:Carthage"
+            name = "Carthage">
+            <FileRef
+               location = "group:Build">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:cuv.h">
+         </FileRef>
+         <FileRef
+            location = "group:LICENSE">
+         </FileRef>
+         <FileRef
+            location = "group:LICENSE.LESSER">
+         </FileRef>
+         <FileRef
+            location = "group:module.modulemap">
+         </FileRef>
+         <FileRef
+            location = "group:Package.swift">
+         </FileRef>
+         <FileRef
+            location = "group:README.md">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Carthage/Checkouts/Event/Event.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Carthage/Checkouts/ExecutionContext/ExecutionContext.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Carthage/Checkouts/Foundation3/Foundation3.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Carthage/Checkouts/Future/Future.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Carthage/Checkouts/Result/Result.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Carthage/Checkouts/RunLoop/RunLoop.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Carthage/Checkouts/UV/UV.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>
